@@ -376,7 +376,7 @@ read exitproc <&3
 # we'll only reach this if one of the processes above has terminated
 echo "Process exited unexpectedly: $exitproc" >&2
 
-sudo chmod 0667 /tmp/heroku.fcgi.5000.sock
+
 
 # this will trigger the EXIT trap further up and kill all remaining children
 exit 1
